@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".MainActivity2">
+
+
+    <TextView
+        android:id="@+id/Product"
+        android:layout_width="270dp"
+        android:layout_height="57dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Product"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="149dp"
+        android:layout_height="155dp"
+
+        android:layout_below="@id/Product"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="115dp"
+        android:contentDescription="TODO"
+        android:onClick="chooseImage"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Cid"
+        android:hint="Comapany id"
+        android:layout_marginTop="20dp"
+        android:maxLength="25"
+        android:layout_below="@id/imageView"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Pname"
+        android:hint="Product name here"
+        android:layout_marginTop="20dp"
+        android:maxLength="25"
+        android:layout_below="@id/Cid"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Pprice"
+        android:layout_marginTop="20dp"
+        android:hint="Price "
+        android:maxLength="25"
+        android:layout_below="@id/Pname"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Pwatts"
+        android:layout_marginTop="20dp"
+        android:hint="Watts "
+        android:maxLength="25"
+        android:layout_below="@id/Pprice"
+
+        />
+
+    <Button
+        android:id="@+id/storeBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/Pwatts"
+        android:layout_marginTop="30dp"
+
+        android:text="store"
+        android:textColor="@color/white"
+        android:onClick="storeImage"
+
+        />
+    <Button
+        android:id="@+id/moveToShowActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/storeBtn"
+        android:layout_marginTop="30dp"
+
+        android:text="move to show  activity"
+        android:textColor="@color/white"
+        android:onClick="moveToShowActivity"
+        />
+
+
+
+</RelativeLayout>

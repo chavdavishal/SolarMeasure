@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My App</string>
+    <string name="password">Password :</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="name">Name</string>
+    <string name="flot" />
+    <string name="floaat">float</string>
+
+    <string name="email">Email</string>
+    <string name="please_login_with_your_information">please login with your information</string>
+    <string name="welcome">Welcome</string>
+    <string name="login">Login</string>
+    <string name="i_forgot_my_password">I forgot my password</string>
+    <string name="GoToRegister">Go To Register</string>
+    <string name="reference_self_intersecting">reference_self_intersecting</string>
+    <string name="reference_phase_title">Set the Point</string>
+    <string name="measurement_phase_title">Measurement</string>
+    <string name="length">Length</string>
+    <string name="self_intersection_warning">self_intersection_warning</string>
+    <string name="area">area</string>
+    <string name="pref_uom_default">pref_uom_default</string>
+
+
+
+
+    <string-array name="discription">
+        <item>world-class polycrystalline solar panels that are precision-built with high-quality raw materials to provide you with high-quality solar photovoltaic panels for your house and large-scale solar projects. We manufacture reliable solar PV modules for numerous customer segments in domestic as well as international markets adopting cutting-edge manufacturing and advanced technologies. Polycrystalline solar panels are safer for the environment since polycrystalline solar cells are manufactured in a less wasteful manner. As a consequence, they are more cost effective for the customer. Roof-mounted arrays are ideal. They are used in big solar farms in order to harness the power of the sun at a low cost and to supply electricity to surrounding areas.</item>
+        <item>Plaza Power decided to add Half-cut technology-based solar panels to its product portfolio in response to increased demand for high-efficiency and more powerful solar panels. The solar panel is split into two halves in half-cut technology, allowing the top and bottom halves to work as two separate panels, generating enough electricity even if one half is shaded. Traditional monocrystalline or Mono PERC solar panels include 60 to 72 solar cells, however half-cut solar panels split the cells in half to increase the number of cells to 120 to 144. By cutting the cells in half, resistive losses are reduced, enhancing module efficiency and producing more watts. </item>
+        <item>world-class monocrystalline solar panels designed with next-generation PERC cell technology, which promises higher performance compared with standard PV modules. Sun Light capture at the Solar Cell is improved by the PERC architecture. A dielectric layer on the mono PERC solar panel cell reflects sunlight to the cell, which would otherwise pass through the cell without releasing an electron. This allows the photon to create more electrons, increasing electric current and efficiency.</item>
+        <item>monocrystalline solar panels designed with next-generation PERC cell technology, which promises higher performance compared with standard PV modules. Sun Light capture at the Solar Cell is improved by the PERC architecture. A dielectric layer on the mono PERC solar panel cell reflects sunlight to the cell, which would otherwise pass through the cell without releasing an electron. This allows the photon to create more electrons, increasing electric current and efficiency.</item>
+        <item> Half-cut technology-based solar panels to its product portfolio in response to increased demand for high-efficiency and more powerful solar panels. The solar panel is split into two halves in half-cut technology, allowing the top and bottom halves to work as two separate panels, generating enough electricity even if one half is shaded. Traditional monocrystalline or Mono PERC solar panels include 60 to 72 solar cells, however half-cut solar panels split the cells in half to increase the number of cells to 120 to 144. By cutting the cells in half, resistive losses are reduced, enhancing module efficiency and producing more watts. </item>
+        <item>world-class polycrystalline solar panels that are precision-built with high-quality raw materials to provide you with high-quality solar photovoltaic panels for your house and large-scale solar projects. We manufacture reliable solar PV modules for numerous customer segments in domestic as well as international markets adopting cutting-edge manufacturing and advanced technologies. Polycrystalline solar panels are safer for the environment since polycrystalline solar cells are manufactured in a less wasteful manner. As a consequence, they are more cost effective for the customer. Roof-mounted arrays are ideal. They are used in big solar farms in order to harness the power of the sun at a low cost and to supply electricity to surrounding areas. </item>
+        <item>monocrystalline solar panels designed with next-generation PERC cell technology, which promises higher performance compared with standard PV modules. Sun Light capture at the Solar Cell is improved by the PERC architecture. A dielectric layer on the mono PERC solar panel cell reflects sunlight to the cell, which would otherwise pass through the cell without releasing an electron. This allows the photon to create more electrons, increasing electric current and efficiency. </item>
+        <item>world-class monocrystalline solar panels designed with next-generation PERC cell technology, which promises higher performance compared with standard PV modules. Sun Light capture at the Solar Cell is improved by the PERC architecture. A dielectric layer on the mono PERC solar panel cell reflects sunlight to the cell, which would otherwise pass through the cell without releasing an electron. This allows the photon to create more electrons, increasing electric current and efficiency.</item>
+    </string-array>
+</resources>

@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/camera_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:context="org.secuso.privacyfriendlycameraruler.cameraruler.CameraActivity">
+
+            <include layout="@layout/toolbar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:background="#FFFFFF"
+                android:orientation="vertical"
+                tools:context=".cameraruler.CameraActivity">
+
+
+                <ImageView
+                    android:id="@+id/pictureView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="matrix"
+                    android:src="@color/darkblue"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/camera_ruler_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+                tools:context=".cameraruler.CameraActivity">
+
+                <TextView
+                    android:id="@+id/camera_gallery_choice_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginTop="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textAlignment="center"
+                    android:textSize="9pt"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_below="@+id/camera_gallery_choice_text"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="15dp">
+
+                        <ImageButton
+                            android:id="@+id/from_camera_button"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center_horizontal"
+                            android:radius="6dp"
+                            android:background="@color/darkblue"
+                            android:scaleType="fitCenter"
+                            android:padding="15dp"
+                            android:src="@drawable/ic_photo_camera_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/camera_button_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:paddingTop="5dp"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:text="From Camera" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp">
+
+                        <ImageButton
+                            android:id="@+id/from_gallery_button"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center_horizontal"
+                            android:radius="6dp"
+                            android:background="@color/darkblue"
+                            android:scaleType="fitCenter"
+                            android:padding="15dp"
+                            android:src="@drawable/ic_photo_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/gallery_button_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:paddingTop="5dp"
+                            android:textSize="16dp"
+                            android:textColor="@color/black"
+                            android:text="From Gallery" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <com.getbase.floatingactionbutton.FloatingActionsMenu
+                android:id="@+id/new_measure_fam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                android:visibility="gone">
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/new_tetragon_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_title="new_tetragon"
+                    fab:fab_size="mini"
+                    fab:fab_icon="@drawable/ic_tetragon"/>
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/new_triangle_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_title="new_triangle"
+                    fab:fab_size="mini"
+                    fab:fab_icon="@drawable/ic_triangle"/>
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/new_circle_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_title="new_circle"
+                    fab:fab_size="mini"
+                    fab:fab_icon="@drawable/ic_circle"/>
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/new_line_fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    fab:fab_title="new_line"
+                    fab:fab_size="mini"
+                    fab:fab_icon="@drawable/ic_line"/>
+            </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/confirm_reference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fab:fab_title="confirm_reference"
+                fab:fab_icon="@drawable/ic_checkmark"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                android:visibility="gone"/>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagesRV"
+
+            android:layout_marginTop="10dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/coverimg"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:scaleType="fitXY" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/coverimg"
+            android:layout_alignBottom="@+id/coverimg"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="-1dp"
+            android:clickable="true"
+            android:contentDescription="@string/floaat"
+            android:src="@android:drawable/ic_input_add" />
+
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="364dp"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="96dp"
+            android:text="Logout" />
+
+        <Button
+            android:id="@+id/btnFeedback"
+            android:layout_width="364dp"
+            android:layout_height="65dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="200dp"
+            android:text="Feedback" />
+
+
+    </RelativeLayout>
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="682dp"
+        android:layout_above="@+id/bottomNavigation"
+        />
+
+</RelativeLayout>
